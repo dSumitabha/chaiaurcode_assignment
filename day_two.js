@@ -47,8 +47,63 @@ let temp = 24
 temp -= 1
 console.log(temp)
 
-//Less than operator
-const lessThan = (){
-    23 <= 35
+//leeThan operator
+const lessThan = (a,b) => {
+    return a < b 
 }
-console.log(lessThan)
+console.log(lessThan(7,9))  // will output true
+
+//greaterThan operator
+const greaterThan = (a,b) => {
+    return a > b 
+}
+
+console.log(greaterThan(7,9))   // will output false
+
+//lessThanEqual operator 
+const lessThanEqual = (a,b) => {
+    return a <= b
+}
+console.log(lessThanEqual(19,27))   // will output true
+
+//greaterThanEqual operator
+const greaterThanEqual = (a,b) => {
+    return a >= b
+}
+console.log(greaterThanEqual(33,25))   // will output false
+
+//check operator 
+const equalCheck = (a,b)  => {
+    return a == b 
+}
+console.log(equalCheck(23,'23'))    // will output true
+
+//strictCheck operator
+const strictCheck = (a,b) => {
+    return a === b
+}
+console.log(strictCheck(23,'23'))    // will output false
+
+//and opertor
+const doubleCheck = (a,b) => {
+    return a > b && a !== 0
+}
+console.log(doubleCheck(5,2))       //will output true
+
+//or operator 
+const optionalCheck = (a,b) => {
+    return (a > b) || (a !== 0)
+}
+console.log(optionalCheck(5,3))     //will output true
+
+//negateCheck a condition 
+const negateCheck = (a,b) => {
+    return a !== b
+}
+console.log(negateCheck(3,9))      //will output true
+
+//ternary opertor
+const ternaryCheck = (a,b) => {
+    return (a > b) ? 'right' : 'wrong'
+}
+console.log(ternaryCheck(5,8))      //will output wrong
